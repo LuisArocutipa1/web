@@ -1,0 +1,312 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', serif;
+    background-color: black;
+    color: white;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: transparent;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #00aaff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffffff;
+}
+
+.hero_inicio {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    text-align: center;
+}
+
+.hero_inicio h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero_inicio h2 {
+    font-size: 2.2rem;
+    line-height: 1.5;
+}
+.about {
+    background-color: #e9eaee;
+    padding: 80px 50px;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.about-image img {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #e9eaee;
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 3rem;
+    color: #0b5c9d;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.about-text p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 14px 40px;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 40px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #333;
+}
+.services {
+    background-color: #8eb7dc;
+    padding: 60px 50px;
+    text-align: center;
+}
+
+.services h2 {
+    font-size: 3rem;
+    margin-bottom: 40px;
+    color: black;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-item {
+    max-width: 220px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-item p {
+    margin-top: 15px;
+    font-weight: 500;
+    font-size: 1rem;
+    color: black;
+}
+
+/* Íconos con SVG embedidos o background */
+
+.icon {
+    width: 120px;
+    height: 120px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* Iconos personalizados como background images */
+
+.recycle-icon {
+    background-image: url('gestion_recursos.png');
+}
+
+.truck-icon {
+    background-image: url('Transport-Truck-icon.png');
+}
+
+.toxic-icon {
+    background-image: url('skull_truck.png');
+}
+
+.radioactivity-icon {
+    background-image: url('radiation_truck.png');
+}
+
+/* Opcional: Si no tienes los SVG, te puedo pasar los iconos en base64 o usando FontAwesome */
+.clients {
+  padding: 60px 50px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+.clients h2 {
+  font-size: 3rem;
+  color: #166ba6; /* color azul como el texto de antes */
+  margin-bottom: 30px;
+  border-bottom: 1px solid #166ba6;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.clients-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px; /* espacio entre logos */
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.clients-logos img {
+  max-height: 120px;
+  object-fit: contain;
+}
+.footer {
+  background-color: #e5e5e9;
+  padding: 30px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-logo img {
+  height: 100px;
+  margin-right: 20px;
+}
+
+.footer-info {
+  display: flex;
+  gap: 60px;
+}
+
+.footer-info h3 {
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+.footer-info p, .footer-info a {
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.footer-info a:hover {
+  text-decoration: underline;
+}
+/* Hero específico para la página de servicios */
+.hero_servicios {
+    background-color: #0b5c9d;
+    color: white;
+    padding: 225px 20px;
+    text-align: center;
+}
+
+.hero_servicios h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero_servicios h2 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #d9efff;
+}
+
+/* Sección de detalle de servicio */
+.service-detail {
+    padding: 60px 50px;
+    background-color: #f7f7f7;
+}
+
+.service-detail:nth-child(even) {
+    background-color: #e9eaee;
+}
+
+.service-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.service-text {
+    flex: 1 1 500px;
+}
+
+.service-text h2 {
+    font-size: 2rem;
+    color: #0b5c9d;
+    margin-bottom: 20px;
+}
+
+.service-text p {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+}
+
+.service-image {
+    flex: 1 1 400px;
+}
+
+.service-image img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Alternar dirección */
+.service-detail.reverse .service-content {
+    flex-direction: row-reverse;
+}
