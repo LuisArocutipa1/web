@@ -424,10 +424,16 @@ header {
 }
 /* Estilos para la página Nosotros */
 
-.nosotros-section {
+.nosotros-section:nth-of-type(odd) {
+    padding: 80px 50px;
+    background-color: #f7f7f7;
+    max-width: 100%;
+    margin: 0 auto;
+}
+.nosotros-section:nth-of-type(even){
     padding: 80px 50px;
     background-color: #e9eaee;
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -507,8 +513,8 @@ header {
 }
 
 .vmv-item img {
-    width: 70%;
-    height: 180px;
+    width: 50%;
+    height: 50%;
     object-fit: cover;
     border-radius: 10px;
     margin-bottom: 15px;
